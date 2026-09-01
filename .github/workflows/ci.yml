@@ -1,10 +1,19 @@
-name: CI
+name: CI & Deploy
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   frontend:
@@ -23,10 +32,32 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - run: npm ci
-
       - run: npm run lint
-
       - run: npm run build
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/configure-pages@v5
+
+      # NOTE: Change 'frontend/dist' to 'frontend/build' if your framework outputs to build/
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'frontend/dist'
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: frontend
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   backend:
     name: Backend (szintaxis ellenőrzés)
