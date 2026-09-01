@@ -1,0 +1,508 @@
+body {
+  font-family: var(--font);
+}
+
+.app {
+  text-align: center;
+}
+
+.header-ghost {
+  font-family: var(--font-title);
+  font-size: 20vw;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.header h1 {
+  font-family: var(--font-title);
+  font-size: 14px;
+  letter-spacing: 0.35em;
+  text-indent: 0.175em;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-family: var(--font-title);
+  font-size: clamp(14px, 1.6vw, 22px);
+  line-height: 1.55;
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
+}
+
+.header p::first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 0.8;
+  padding-right: 0.06em;
+}
+
+.header-charm {
+  user-select: none;
+}
+
+.controls input,
+.masked-field-input input,
+.star-field select,
+.star-field textarea {
+  font-family: var(--font);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.star-field textarea {
+  line-height: 1.5;
+}
+
+.masked-field-label {
+  color: inherit;
+}
+
+.masked-field-picker {
+  font-size: 13px;
+}
+
+.star-hint {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+}
+
+.controls input::placeholder {
+  letter-spacing: 0.06em;
+}
+
+.controls > button,
+.save-button,
+.cancel-button,
+.delete-button,
+.settings-button,
+.reset-button {
+  font-family: var(--font);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.controls > button,
+.save-button,
+.cancel-button {
+  font-size: 11px;
+}
+
+.demo-notice,
+.error-message,
+.success-message {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.map-info {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.26em;
+  text-indent: 0.13em;
+  text-transform: uppercase;
+}
+
+.saved-maps summary,
+.saved-map-card {
+  text-align: left;
+}
+
+.saved-maps summary {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.saved-maps > p {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.saved-map-card h4 {
+  font-family: var(--font-title);
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.saved-map-card p {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.delete-button,
+.settings-button,
+.reset-button {
+  font-size: 10px;
+}
+
+.next-button {
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.zoom-controls button {
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.magnitude-hints {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.magnitude-hints dd {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+.picker-popover {
+  font-size: 12px;
+}
+
+.picker-head span {
+  font-family: var(--font-title);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.picker-weekdays span {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.picker-day,
+.picker-slot {
+  font-family: var(--font);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.star-settings-group h4 {
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.24em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.star-toggle,
+.star-field > span,
+.masked-field-label {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.star-field > span b {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.slot-button {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.guide-link {
+  font-family: var(--font);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.guide-link span {
+  font-size: 9px;
+}
+
+.book-entries b {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.book-entries p {
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.modal-title h3 {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.26em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.modal-title p {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.modal-close {
+  font-family: var(--font);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.guide-path h4 {
+  font-family: var(--font-title);
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+}
+
+.guide-path-summary {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.guide-path p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.guide-path-note,
+.guide-question h4 {
+  font-family: var(--font-title);
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-align: left;
+}
+
+.guide-option,
+.guide-book-toggle {
+  font-size: 13px;
+}
+
+.guide-result-label {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.guide-result-star {
+  font-family: var(--font-title);
+  font-size: clamp(38px, 6vw, 62px);
+  font-weight: normal;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+.guide-result-constellation {
+  font-family: var(--font-title);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.guide-result-summary {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.guide-result-gem {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.guide-book-preview {
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.scroll-hint {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.book-star h5 {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.book-date {
+  font-family: var(--font);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.guide-tag {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.next-step span {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.location-suggestion b {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.location-suggestion span {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.book-add {
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.book-add span {
+  font-size: 13px;
+}
+
+.book-star p {
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.book-pager {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.book-pager button {
+  font-size: 15px;
+}
+
+.story-tag b {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.story-tag span {
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.behenian-list {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.date-choice h4 {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.14em;
+  text-align: left;
+}
+
+.jewel-warning {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.location-empty {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.book-page h4 {
+  font-family: var(--font-title);
+  font-size: 3.6em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+.book-page h5 {
+  font-size: 2.1em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.book-page p {
+  font-size: 2.7em;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.book-page .location {
+  font-family: var(--font-title);
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.book-page .coordinates {
+  font-size: 2.1em;
+  letter-spacing: 0.12em;
+}
+
+.book-page .inscription {
+  font-family: var(--font-title);
+  font-size: 3.6em;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.book-page .stars {
+  line-height: 1.7;
+}
+
+.book-page .note {
+  font-size: 2.4em;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.book-page .moon {
+  font-size: 2.1em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.book-page .closing {
+  font-family: var(--font-title);
+  font-size: 2.6em;
+  letter-spacing: 0.3em;
+}
+
+.book-page .mark {
+  font-size: 1.6em;
+}

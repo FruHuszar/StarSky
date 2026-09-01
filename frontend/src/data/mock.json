@@ -1,0 +1,147 @@
+{
+  "maps": [
+    {
+      "id": 1,
+      "location": "Budapest",
+      "date": "2026-08-20",
+      "time": "22:00",
+      "latitude": 47.4979,
+      "longitude": 19.0402,
+      "timezone": "Europe/Budapest",
+      "settings": {
+        "magnitudeLimit": 5.2,
+        "showConstellations": true,
+        "showConstellationNames": false,
+        "showStarNames": false,
+        "showPlanets": true,
+        "showSun": true,
+        "showMoon": true,
+        "showMilkyWay": true,
+        "showEcliptic": false,
+        "showGrid": false,
+        "showCircumpolar": false,
+        "showCardinals": true,
+        "customText": "Az első közös nyarunk.",
+        "favouriteStars": [
+          "Vega"
+        ],
+        "bookEntries": [
+          {
+            "label": "A csillag mítosza",
+            "text": "Vega – Lant. A Lant Orpheusz hangszere, amelynek zenéjére a folyók is megálltak. Halála után a múzsák kérésére került az égre."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "location": "Debrecen",
+      "date": "2026-07-04",
+      "time": "21:30",
+      "latitude": 47.5316,
+      "longitude": 21.6273,
+      "timezone": "Europe/Budapest",
+      "settings": {
+        "magnitudeLimit": 4.2,
+        "showConstellations": true,
+        "showConstellationNames": true,
+        "showStarNames": false,
+        "showPlanets": true,
+        "showSun": true,
+        "showMoon": true,
+        "showMilkyWay": false,
+        "showEcliptic": false,
+        "showGrid": false,
+        "showCircumpolar": true,
+        "showCardinals": true,
+        "customText": null,
+        "favouriteStars": [],
+        "bookEntries": []
+      }
+    },
+    {
+      "id": 3,
+      "location": "Szeged",
+      "date": "2026-06-15",
+      "time": "16:00",
+      "latitude": 46.253,
+      "longitude": 20.1414,
+      "timezone": "Europe/Budapest",
+      "settings": {
+        "magnitudeLimit": 5.8,
+        "showConstellations": true,
+        "showConstellationNames": false,
+        "showStarNames": true,
+        "showPlanets": true,
+        "showSun": true,
+        "showMoon": true,
+        "showMilkyWay": true,
+        "showEcliptic": true,
+        "showGrid": false,
+        "showCircumpolar": false,
+        "showCardinals": true,
+        "customText": "Amikor igent mondtunk.",
+        "favouriteStars": [
+          "Arcturus"
+        ],
+        "bookEntries": []
+      }
+    }
+  ],
+  "cities": [
+    {
+      "location": "Budapest",
+      "latitude": 47.4979,
+      "longitude": 19.0402,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Debrecen",
+      "latitude": 47.5316,
+      "longitude": 21.6273,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Szeged",
+      "latitude": 46.253,
+      "longitude": 20.1414,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Miskolc",
+      "latitude": 48.1035,
+      "longitude": 20.7784,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Pécs",
+      "latitude": 46.0727,
+      "longitude": 18.2323,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Győr",
+      "latitude": 47.6875,
+      "longitude": 17.6504,
+      "timeZone": "Europe/Budapest"
+    },
+    {
+      "location": "Kyoto",
+      "latitude": 35.0116,
+      "longitude": 135.7681,
+      "timeZone": "Asia/Tokyo"
+    },
+    {
+      "location": "Reykjavík",
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "timeZone": "Atlantic/Reykjavik"
+    },
+    {
+      "location": "Sydney",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "timeZone": "Australia/Sydney"
+    }
+  ]
+}

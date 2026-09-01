@@ -1,0 +1,111 @@
+@media (orientation: portrait) {
+  .header-charm {
+    height: auto;
+    width: 100vw;
+    bottom: -25vw;
+  }
+
+  .custom-jewelry {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    gap: 44px;
+    padding: 40px 14px 56px;
+    overflow: visible;
+  }
+
+  .jewelry-preview {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .jewelry-panel {
+    border-right: none;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .modal {
+    height: 85vh;
+  }
+
+  .keepsake-book {
+    --u: 1.02cqw;
+  }
+
+  .date-choice {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .zoom-controls {
+    top: auto;
+    right: 0;
+    bottom: -44px;
+    left: 0;
+    justify-content: center;
+    flex-direction: row;
+    transform: none;
+  }
+
+  .star-settings,
+  .star-settings-jewel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .modal-head {
+    padding: 20px 60px 14px 20px;
+  }
+
+  .modal-body {
+    padding: 6px 20px 20px;
+  }
+
+  .modal-foot {
+    padding: 16px 20px 20px;
+  }
+
+  .guide-date {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .map-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .map-actions > * {
+    flex: 0 0 auto;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .control-field-date {
+    width: 100%;
+  }
+
+  .controls > button {
+    margin-top: 4px;
+  }
+
+  .star-map {
+    width: min(100%, 300px);
+    max-width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .gallery-stage {
+    flex: none;
+    height: 360px;
+    min-height: auto;
+  }
+
+  .saved-maps-list {
+    grid-template-columns: 1fr;
+  }
+}

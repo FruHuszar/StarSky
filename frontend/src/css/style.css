@@ -1,0 +1,631 @@
+body {
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-font);
+}
+
+.custom-jewelry {
+  background-color: var(--color-theme-bg);
+}
+
+::selection {
+  background-color: var(--color-theme-focus);
+  color: var(--color-theme-bg);
+}
+
+.header-ghost {
+  color: var(--color-theme-input-bg);
+}
+
+.header h1 {
+  color: var(--color-theme-accent);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+.saved-map-card:focus-visible {
+  outline: 3px solid var(--color-theme-focus);
+  outline-offset: 0;
+}
+
+.control-field:has(input:focus-visible)::after,
+button:focus-visible::after,
+.saved-map-card:focus-visible::after {
+  background-color: var(--color-theme-red);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.jewelry-panel {
+  border-right: 1px solid var(--color-theme-hairline);
+  overscroll-behavior: contain;
+  scrollbar-color: var(--color-theme-hairline-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.jewelry-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.jewelry-panel::-webkit-scrollbar-thumb {
+  background-color: var(--color-theme-hairline-strong);
+  border-radius: 3px;
+}
+
+.jewelry-panel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.demo-notice {
+  color: var(--color-theme-muted);
+}
+
+.error-message {
+  color: var(--color-error);
+}
+
+.success-message {
+  color: var(--color-success);
+}
+
+.controls input[type="text"],
+.masked-field-input input[type="text"],
+.star-field select,
+.star-field textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-theme-hairline-strong);
+  border-radius: 0;
+}
+
+.masked-field-input {
+  border-bottom: 1px solid var(--color-theme-hairline-strong);
+}
+
+.masked-field-input input[type="text"] {
+  border: none;
+}
+
+.masked-field-picker {
+  background-color: transparent;
+  border: none;
+  color: var(--color-theme-muted);
+  cursor: pointer;
+}
+
+.star-hint {
+  color: var(--color-theme-muted);
+}
+
+.controls input::placeholder,
+.star-field textarea::placeholder {
+  color: var(--color-theme-muted);
+  opacity: 1;
+}
+
+.controls input[type="date"] {
+  cursor: pointer;
+}
+
+.controls > button {
+  background-color: var(--color-theme-focus);
+  border: 1px solid var(--color-theme-focus);
+  border-radius: var(--radius);
+  color: var(--color-theme-bg);
+  cursor: pointer;
+}
+
+.map-info {
+  color: var(--color-theme-muted);
+}
+
+.settings-button,
+.reset-button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  color: var(--color-theme-muted);
+  cursor: pointer;
+}
+
+.star-settings {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline);
+  border-radius: var(--radius);
+}
+
+.star-settings-group h4 {
+  border-bottom: 1px solid var(--color-theme-hairline);
+}
+
+.star-toggle {
+  cursor: pointer;
+}
+
+.star-toggle input,
+.star-field input[type="range"] {
+  accent-color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.star-field > span {
+  color: var(--color-theme-muted);
+}
+
+.star-field b {
+  color: var(--color-theme-focus);
+}
+
+.star-field select,
+.star-field textarea {
+  border: none;
+  border-bottom: 1px solid var(--color-theme-hairline-strong);
+  border-radius: 0;
+}
+
+.star-field select {
+  cursor: pointer;
+}
+
+.gallery-thumbnail {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.gallery-thumbnail.active {
+  border-color: var(--color-theme-focus);
+}
+
+.gallery-thumbnail-frame {
+  background-color: var(--color-theme-bg);
+}
+
+.star-map {
+  border-radius: 50%;
+}
+
+.star-map.draggable canvas {
+  cursor: grab;
+}
+
+.star-map.draggable canvas:active {
+  cursor: grabbing;
+}
+
+.zoom-controls button {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.zoom-controls button:disabled {
+  color: var(--color-theme-hairline-strong);
+  cursor: default;
+}
+
+.next-button {
+  background-color: var(--color-theme-focus);
+  border: 1px solid var(--color-theme-focus);
+  border-radius: var(--radius);
+  color: var(--color-theme-bg);
+  cursor: pointer;
+}
+
+.star-map canvas {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-theme-accent), transparent 45%),
+    0 26px 50px -26px
+      color-mix(in srgb, var(--color-theme-font), transparent 45%);
+}
+
+.save-button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-focus);
+  border-radius: var(--radius);
+  color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  color: var(--color-theme-muted);
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  color: var(--color-theme-muted);
+  cursor: pointer;
+}
+
+.saved-maps summary {
+  border-bottom: 1px solid var(--color-theme-hairline-strong);
+  cursor: pointer;
+  list-style: none;
+}
+
+.saved-maps summary::-webkit-details-marker {
+  display: none;
+}
+
+.saved-maps summary::after {
+  color: var(--color-theme-muted);
+  content: "▾";
+}
+
+.saved-maps[open] summary::after {
+  content: "▴";
+}
+
+.book-star p {
+  color: var(--color-theme-muted);
+}
+
+.saved-maps > p {
+  color: var(--color-theme-muted);
+}
+
+.saved-map-card {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.saved-map-card.selected {
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-bg) 92%
+  );
+  border-color: color-mix(in srgb, var(--color-theme-focus), transparent 25%);
+}
+
+.saved-map-card h4 {
+  color: var(--color-theme-focus);
+}
+
+.saved-map-card p {
+  color: var(--color-theme-muted);
+}
+
+.magnitude-hints dt {
+  color: var(--color-theme-muted);
+}
+
+.picker-popover {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px -22px rgb(11 13 23 / 45%);
+}
+
+.picker-head button,
+.picker-day,
+.picker-slot {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.picker-weekdays span {
+  color: var(--color-theme-muted);
+}
+
+.picker-day.muted {
+  color: var(--color-theme-hairline-strong);
+}
+
+.picker-day.today {
+  border-color: var(--color-theme-hairline-strong);
+}
+
+.picker-day.selected,
+.picker-slot.selected {
+  background-color: var(--color-theme-focus);
+  color: var(--color-theme-bg);
+}
+
+.slot-button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-focus);
+  border-radius: var(--radius);
+  color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.slot-button:disabled {
+  border-color: var(--color-theme-hairline-strong);
+  color: var(--color-theme-hairline-strong);
+  cursor: default;
+}
+
+.guide-link {
+  background: none;
+  border: none;
+  color: var(--color-theme-focus);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.guide-link span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--color-theme-focus);
+  border-radius: 50%;
+}
+
+.book-entries li {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline);
+  border-radius: var(--radius);
+}
+
+.book-entries p {
+  color: var(--color-theme-muted);
+}
+
+.modal-backdrop {
+  background-color: rgb(11 13 23 / 45%);
+}
+
+.modal {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 40px 90px -40px rgb(11 13 23 / 55%);
+}
+
+.progress-step {
+  background-color: var(--color-theme-hairline);
+}
+
+.progress-step.done {
+  background-color: var(--color-theme-focus);
+}
+
+.modal-title p {
+  color: var(--color-theme-muted);
+}
+
+.modal-close {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.modal-foot {
+  border-top: 1px solid var(--color-theme-hairline);
+}
+
+.guide-path {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.guide-path.selected {
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-bg) 94%
+  );
+  border-color: var(--color-theme-focus);
+}
+
+.guide-path p,
+.guide-option,
+.guide-book-toggle {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.guide-option input,
+.guide-book-toggle input {
+  accent-color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.guide-result-label,
+.guide-result-constellation {
+  color: var(--color-theme-muted);
+}
+
+.guide-result-star {
+  color: var(--color-theme-accent);
+}
+
+.guide-result-gem b {
+  color: var(--color-theme-focus);
+}
+
+.guide-book-preview {
+  color: var(--color-theme-muted);
+}
+
+.scroll-hint {
+  background-color: transparent;
+  border: none;
+  color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.book-star h5 {
+  color: var(--color-theme-accent);
+}
+
+.book-date {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.book-date:disabled {
+  color: var(--color-theme-hairline-strong);
+  cursor: default;
+}
+
+.guide-tag {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: 999px;
+  color: var(--color-theme-muted);
+}
+
+.guide-tag.fixed-gem {
+  border-color: var(--color-theme-focus);
+  color: var(--color-theme-focus);
+}
+
+.settings-button span {
+  margin-left: 8px;
+}
+
+.location-suggestions {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 44px -26px rgb(11 13 23 / 45%);
+}
+
+.location-suggestion {
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.location-suggestion.active {
+  background-color: var(--color-theme-surface);
+}
+
+.location-suggestion span {
+  color: var(--color-theme-muted);
+}
+
+.book-add {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  color: var(--color-theme-focus);
+  cursor: pointer;
+}
+
+.book-date.selected {
+  background-color: var(--color-theme-focus);
+  border-color: var(--color-theme-focus);
+  color: var(--color-theme-bg);
+}
+
+.story-tag {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.story-tag.selected {
+  border-color: var(--color-theme-focus);
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-bg) 94%
+  );
+}
+
+.story-tag span,
+.guide-empty {
+  color: var(--color-theme-muted);
+}
+
+.behenian-list li {
+  border-bottom: 1px solid var(--color-theme-hairline);
+  color: var(--color-theme-muted);
+}
+
+.behenian-list span {
+  color: var(--color-theme-hairline-strong);
+}
+
+.jewel-warning {
+  color: var(--color-error);
+}
+
+.location-empty {
+  background-color: var(--color-theme-bg);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  color: var(--color-theme-muted);
+}
+
+.book-page {
+  background-color: var(--color-theme-surface);
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: var(--radius);
+  mask-image: linear-gradient(to right, transparent, #000 6%);
+}
+
+.book-page header,
+.book-page .moon {
+  border-color: var(--color-theme-hairline);
+  border-style: solid;
+  border-width: 0;
+}
+
+.book-page header {
+  border-bottom-width: 1px;
+}
+
+.book-page .moon {
+  border-top-width: 1px;
+}
+
+.book-page h5,
+.book-page .location,
+.book-page .coordinates,
+.book-page .moon {
+  color: var(--color-theme-muted);
+}
+
+.book-page .stars b,
+.book-page .closing {
+  color: var(--color-theme-accent);
+}
+
+.book-pager button {
+  background-color: transparent;
+  border: 1px solid var(--color-theme-hairline-strong);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.book-pager button:disabled {
+  color: var(--color-theme-hairline-strong);
+  cursor: default;
+}
+
+.book-pager span {
+  color: var(--color-theme-muted);
+}

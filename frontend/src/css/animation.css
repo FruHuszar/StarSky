@@ -1,0 +1,186 @@
+button,
+.controls input,
+.masked-field-input,
+.gallery-thumbnail,
+.saved-map-card {
+  transition:
+    background-color var(--speed) var(--ease),
+    border-color var(--speed) var(--ease),
+    box-shadow var(--speed) var(--ease),
+    color var(--speed) var(--ease),
+    transform var(--speed) var(--ease);
+}
+
+.controls input:hover,
+.masked-field-input:hover {
+  border-bottom-color: var(--color-theme-focus);
+}
+
+.gallery-thumbnail:hover {
+  border-color: var(--color-theme-accent);
+}
+
+.zoom-controls button:not(:disabled):hover {
+  border-color: var(--color-theme-focus);
+  color: var(--color-theme-focus);
+}
+
+.next-button:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-font) 25%
+  );
+  border-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-font) 25%
+  );
+}
+
+.guide-path:hover,
+.guide-option:hover,
+.guide-book-toggle:hover {
+  border-color: var(--color-theme-accent);
+}
+
+.scroll-hint {
+  animation: nudge 1.8s var(--ease) infinite;
+}
+
+@keyframes nudge {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(3px);
+  }
+
+  90% {
+    transform: translateY(-1px);
+  }
+}
+
+.book-date:not(:disabled):hover,
+.slot-button:not(:disabled):hover,
+.modal-close:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-bg) 92%
+  );
+}
+
+.picker-day:not(.selected):hover,
+.picker-slot:not(.selected):hover,
+.picker-head button:hover {
+  background-color: var(--color-theme-surface);
+  border-color: var(--color-theme-hairline-strong);
+}
+
+.masked-field-picker:hover {
+  color: var(--color-theme-focus);
+}
+
+.controls > button:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-font) 25%
+  );
+  border-color: color-mix(
+    in srgb,
+    var(--color-theme-focus),
+    var(--color-theme-font) 25%
+  );
+}
+
+.save-button:hover {
+  background-color: var(--color-theme-focus);
+  color: var(--color-theme-bg);
+}
+
+.cancel-button:hover {
+  border-color: var(--color-theme-font);
+  color: var(--color-theme-font);
+}
+
+.delete-button:hover {
+  border-color: var(--color-theme-red);
+  color: var(--color-theme-red);
+}
+
+.saved-map-card:hover {
+  background-color: var(--color-theme-bg);
+  border-color: color-mix(in srgb, var(--color-theme-accent), transparent 40%);
+  box-shadow: 0 14px 26px -18px
+    color-mix(in srgb, var(--color-theme-font), transparent 50%);
+  transform: translateY(-2px);
+}
+
+.settings-button:hover,
+.reset-button:hover {
+  border-color: var(--color-theme-focus);
+  color: var(--color-theme-focus);
+}
+
+.error-message,
+.success-message,
+.star-settings,
+.keepsake-card,
+.picker-popover,
+.modal {
+  animation: rise 0.4s var(--ease) both;
+}
+
+.modal-backdrop {
+  animation: fade 0.25s var(--ease) both;
+}
+
+.saved-map-card {
+  animation: fade 0.4s var(--ease) both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  .controls input,
+  .masked-field-input,
+  .gallery-thumbnail,
+  .saved-map-card {
+    transition: none;
+  }
+
+  .error-message,
+  .success-message,
+  .star-settings,
+  .keepsake-card,
+  .picker-popover,
+  .saved-map-card {
+    animation-duration: 0.01ms;
+  }
+}
