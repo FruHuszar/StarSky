@@ -1,0 +1,9 @@
+name = "starsky-jewelry"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "starsky-db"
+database_id = "ede813a0-a6a6-4f8e-ab19-26dd10e69f1b"
+migrations_dir = "migrations"
